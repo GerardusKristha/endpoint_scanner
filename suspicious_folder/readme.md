@@ -1,24 +1,19 @@
-from datetime import datetime
-
-readme_content = f"""# 🛡️ Endpoint Suspicious File Scanner
+# 🛡️ Endpoint Suspicious File Scanner
 
 A simple Python tool to scan directories for potentially malicious files based on known dangerous extensions. This tool simulates basic endpoint protection behavior and generates a scan log for further review.
 
 ## 📁 Project Structure
 
+```
 endpoint_scanner/
-├── scanner.py ← Main Python script
-├── suspicious_folder/ ← Sample directory to scan
-│ ├── harmless.txt
-│ ├── autorun.bat
-│ └── virus.exe
-├── suspicious.log ← Auto-generated scan results
-└── README.md ← Project documentation
-
-markdown
-Always show details
-
-Copy code
+├── scanner.py              ← Main Python script
+├── suspicious_folder/      ← Sample directory to scan
+│   ├── harmless.txt
+│   ├── autorun.bat
+│   └── virus.exe
+├── suspicious.log          ← Auto-generated scan results
+└── README.md               ← Project documentation
+```
 
 ## 🚀 Features
 
@@ -41,42 +36,37 @@ Copy code
 
 ```bash
 python scanner.py
-Check the results in the terminal and in suspicious.log.
+```
 
-🔍 Sample Output
-bash
-Always show details
+4. Check the results in the terminal and in `suspicious.log`.
 
-Copy code
+## 🔍 Sample Output
+
+```bash
 🔍 Scanning for suspicious files...
 
 🚨 Suspicious file found: suspicious_folder/virus.exe
 🚨 Suspicious file found: suspicious_folder/autorun.bat
 
 ✅ Scan completed. Check suspicious.log for results.
-🛠️ Technologies Used
-Python 3
+```
 
-Built-in modules: os, datetime
+## 🛠️ Technologies Used
 
-📚 Learning Goals
+- Python 3
+- Built-in modules: `os`, `datetime`
+
+## 📚 Learning Goals
+
 This project demonstrates:
+- Basic endpoint security logic
+- How to handle file operations in Python
+- How to implement simple logging mechanisms
 
-Basic endpoint security logic
+## 📄 License
 
-How to handle file operations in Python
-
-How to implement simple logging mechanisms
-
-📄 License
 This is an open educational project. Feel free to modify or extend it.
 
-✍️ Author
-Created by Gerardus Bayu – {datetime.today().strftime('%B %Y')}.
-"""
+## ✍️ Author
 
-readme_path = "/mnt/data/README.md"
-with open(readme_path, "w", encoding="utf-8") as f:
-f.write(readme_content)
-
-readme_path
+Created by Gerardus Bayu – August 2025.
